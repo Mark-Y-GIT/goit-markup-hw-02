@@ -5,38 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio</title>
+    <link
+      rel="stylesheet"
+      class="link"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- шапка сайта -->
+
     <header>
       <nav>
-        <ul>
-          <li><a href="">WebStudio</a></li>
-          <li><a href="">Студия</a></li>
-          <li><a href="">Портфолио</a></li>
-          <li><a href="">Контакты</a></li>
+        <ul class="list">
+          <li>
+            <a class="link logo" href="./index.html"
+              ><span class="color-logo">Web</span>Studio</a
+            >
+          </li>
+          <li>
+            <a class="link navigation current" href="./portfolio.html"
+              >Портфолио</a
+            >
+          </li>
+          <li><a class="link navigation" href="">Контакты</a></li>
+          <li><a class="link navigation" href="./index.html">Студия</a></li>
         </ul>
       </nav>
-      <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-      <a href="tel:+380961111111">+38 096 111 11 11</a>
+      <a class="link contacts" href="mailto:info@devstudio.com"
+        >info@devstudio.com</a
+      >
+      <a class="link contacts" href="tel:+380961111111">+38 096 111 11 11</a>
     </header>
+
     <main>
       <!--фильтр-->
       <section>
-        <h1>Портфолио</h1>
-        <ul>
-          <li><button type="button">Все</button></li>
-          <li><button type="button">Веб-сайты</button></li>
-          <li><button type="button">Приложения</button></li>
-          <li><button type="button">Дизайн</button></li>
-          <li><button type="button">Маркетинг</button></li>
-        </ul>
-      </section>
-      <!--карточки-->
-      <section>
-        <ul>
+        <h1 class="visually-hidden">Портфолио</h1>
+        <ul class="list">
+          <li><button class="button pointer" type="button">Все</button></li>
           <li>
-            <a href="">
+            <button class="button pointer" type="button">Веб-сайты</button>
+          </li>
+          <li>
+            <button class="button pointer" type="button">Приложения</button>
+          </li>
+          <li><button class="button pointer" type="button">Дизайн</button></li>
+          <li>
+            <button class="button pointer" type="button">Маркетинг</button>
+          </li>
+        </ul>
+
+        <!--карточки-->
+
+        <ul class="list">
+          <li>
+            <a class="link card-titles" href="">
               <img
                 src="./images/projects/project-1.jpg"
                 alt="Фото людей на экране ноутбука"
@@ -44,11 +73,11 @@
                 height="294"
               />
               <h2>Технокряк</h2>
-              <p>Веб-сайт</p>
+              <p class="card-text">Веб-сайт</p>
             </a>
           </li>
           <li>
-            <a href="">
+            <a class="link card-titles" href="">
               <img
                 src="./images/projects/project-2.jpg"
                 alt="Два баскетболиста"
@@ -56,11 +85,11 @@
                 height="294"
               />
               <h2>Постер New Orlean vs Golden Star</h2>
-              <p>Дизайн</p>
+              <p class="card-text">Дизайн</p>
             </a>
           </li>
           <li>
-            <a href="">
+            <a class="link card-titles" href="">
               <img
                 src="./images/projects/project-3.jpg"
                 alt="Логотип ресторана морской кухни"
@@ -68,11 +97,11 @@
                 height="294"
               />
               <h2>Ресторан Seafood</h2>
-              <p>Приложение</p>
+              <p class="card-text">Приложение</p>
             </a>
           </li>
           <li>
-            <a href="">
+            <a class="link card-titles" href="">
               <img
                 src="./images/projects/project-4.jpg"
                 alt="Наушники"
@@ -80,11 +109,11 @@
                 height="294"
               />
               <h2>Проект Prime</h2>
-              <p>Маркетинг</p>
+              <p class="card-text">Маркетинг</p>
             </a>
           </li>
           <li>
-            <a href="">
+            <a class="link card-titles" href="">
               <img
                 src="./images/projects/project-5.jpg"
                 alt="Картонные коробки"
@@ -92,11 +121,11 @@
                 height="294"
               />
               <h2>Проект Boxes</h2>
-              <p>Приложение</p>
+              <p class="card-text">Приложение</p>
             </a>
           </li>
           <li>
-            <a href="">
+            <a class="link card-titles" href="">
               <img
                 src="./images/projects/project-6.jpg"
                 alt="Моноблок APPLE iMac pro"
@@ -104,11 +133,11 @@
                 height="294"
               />
               <h2>Inspiration has no Borders</h2>
-              <p>Веб-сайт</p>
+              <p class="card-text">Веб-сайт</p>
             </a>
           </li>
           <li>
-            <a href="">
+            <a class="link card-titles" href="">
               <img
                 src="./images/projects/project-7.jpg"
                 alt="Разворот журнала"
@@ -116,11 +145,11 @@
                 height="294"
               />
               <h2>Издание Limited Edition</h2>
-              <p>Дизайн</p>
+              <p class="card-text">Дизайн</p>
             </a>
           </li>
           <li>
-            <a href="">
+            <a class="link card-titles" href="">
               <img
                 src="./images/projects/project-8.jpg"
                 alt="Бирка"
@@ -128,11 +157,11 @@
                 height="294"
               />
               <h2>Проект LAB</h2>
-              <p>Маркетинг</p>
+              <p class="card-text">Маркетинг</p>
             </a>
           </li>
           <li>
-            <a href="">
+            <a class="link card-titles" href="">
               <img
                 src="./images/projects/project-9.jpg"
                 alt="Человек печатает на ноутбуке"
@@ -140,27 +169,38 @@
                 height="294"
               />
               <h2>Growing Business</h2>
-              <p>Приложение</p>
+              <p class="card-text">Приложение</p>
             </a>
           </li>
         </ul>
       </section>
     </main>
     <!--подвал-->
-    <footer>
-      <a href="">WebStudio</a>
-      <address>
-        <ul>
+    <footer class="dark-bg">
+      <a class="link logo dark-bg-logo" href="./index.html"
+        ><span class="color-logo">Web</span>Studio</a
+      >
+      <address class="address">
+        <ul class="list">
           <li>
             <a
+              class="link map"
               href="https://goo.gl/maps/tGDWyoFDeUwsjnbn9"
               target="_blank"
               rel="noreferrer noopener"
               >г. Киев, пр-т Леси Украинки, 26</a
             >
           </li>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li>
+            <a class="link footer-navigation" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="link footer-navigation" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
         </ul>
       </address>
     </footer>
